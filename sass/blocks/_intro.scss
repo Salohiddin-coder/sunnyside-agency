@@ -149,13 +149,20 @@
 }
 
 
+
+
 @media only screen and (max-width:520px) {
+  .intro {
+    display: flex;
+  }
+
   .intro__img {
     margin: 64px 0;
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     height: 312px;
   }
-  
+
   .intro__content-one {
     align-items: center;
     flex-direction: column-reverse;
@@ -171,12 +178,17 @@
   .intro__content {
     padding: 0 20px;
   }
+
+  .intro__link::after {
+    left: calc(50% - 70px);
+  }
   
   .intro__element {
     margin-top: 50px;
     padding-right: 24px;
     padding-left: 24px;
-    max-width: 375px;
+    width: 100%;
+    max-width: 520px;
     background-position: center;
   }
   
@@ -184,7 +196,8 @@
     margin-top: 50px;
     padding-right: 24px;
     padding-left: 24px;
-    max-width: 375px;
+    width: 100%;
+    max-width: 520px;
     background-position: center;
   }
 }

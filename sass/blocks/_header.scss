@@ -5,6 +5,7 @@
 }
 
 .header__inner {
+  width: 100%;
   display: flex;
   padding: 40px 0;
 }
@@ -75,6 +76,7 @@
   }
   
   .hero__inner {
+    max-width: 375px;
     padding: 32px 40px;
   }
   
@@ -137,8 +139,4 @@
     border-bottom: 24px solid transparent;     
     border-right:24px solid #FFFCF8;     
   }
-}
-
-@media only screen and (max-width:320px) {
-  
 }
